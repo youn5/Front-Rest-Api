@@ -1,4 +1,76 @@
-:root {
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#type-select {
+  margin: 20px 0;
+}
+
+/* Style the buttons */
+input[type=radio] {
+  display: none;
+}
+
+/* Style the labels */
+label {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: black;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Change the background color of the labels on hover */
+label:hover {
+  background-color: #ddd;
+}
+
+/* Change the background color of the labels when checked */
+input[type=radio]:checked + label {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -93,4 +165,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

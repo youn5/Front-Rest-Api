@@ -1,13 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokédex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  </head>
+  <body>
+    <div id="app">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Enter Pokmon name or ID"
+      />
+      <div>
+        <input type="radio" id="name" name="searchType" value="name" checked />
+        <label for="name">Name</label>
+        <input type="radio" id="id" name="searchType" value="id" />
+        <label for="id">ID</label>
+        <button id="searchButton">Search</button>
+      </div>
+      <input type="radio" id="normal" name="type" value="normal" />
+      <label for="normal">NORMAL</label>
+      <input type="radio" id="fire" name="type" value="fire" />
+      <label for="fire">FIRE</label>
+      <!-- et ainsi de suite pour les autres types -->
+
+      <select id="type-select"></select>
+
+      <!-- <div class="select-box">
+      <label for="type-select">Filter by type:</label>
+      <select name="types" id="type-select">
+        <option value="">All types</option>
+        <option value="fire">Fire</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+        <option value="water">Water</option>
+        <option value="ground">Ground</option>
+        <option value="rock">Rock</option>
+        <option value="fairy">Fairy</option>
+        <option value="poison">Poison</option>
+        <option value="bug">Bug</option>
+        <option value="dragon">Dragon</option>
+        <option value="psychic">Psychic</option>
+        <option value="flying">Flying</option>
+        <option value="fighting">Fighting</option>
+        <option value="normal">Normal</option>
+      </select>
+    </div> -->
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pokedex</title>
+     
+     
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <input type="text" id="searchInput" placeholder="Enter Pokmon name or ID">
+      <div>
+        <input type="radio" id="name" name="searchType" value="name" checked>
+        <label for="name">Name</label>
+        <input type="radio" id="id" name="searchType" value="id">
+        <label for="id">ID</label>
+      </div>
+      
+      <select id="type-select"></select>
+      <button id="searchButton">Search</button>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
-</html>
+</html> -->
+
+<!-- ................................................................... -->
+
+<!-- 
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>pokedex</title>
+    </head>
+    <body>
+      <div id="app">
+        <input type="text" id="searchInput" placeholder="Enter Pokemon name/ID">
+        <div>
+          <input type="radio" id="name" name="searchType" value="name" checked>
+          <label for="name">Name</label>
+          <input type="radio" id="id" name="searchType" value="id">
+          <label for="id">ID</label>
+        </div>
+        <button id="searchButton">Search</button>
+        <select id="type-select"></select>
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+        <ul id="pokemonList"></ul>
+      </div>
+      <script type="module" src="/src/main.ts"></script>
+    </body>
+  </html>
+  -->
